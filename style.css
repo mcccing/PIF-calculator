@@ -67,11 +67,11 @@ body {
 .input-card label {
   color: var(--muted);
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px; 
 }
 .input-card input {
   font-family: Consolas, "JetBrains Mono", Menlo, monospace;
-  font-size: 14px;
+  font-size: 16px; 
   padding: 7px 10px;
   width: 180px;
   border: 1px solid var(--border);
@@ -131,8 +131,8 @@ body {
   margin: 0;
   padding: 12px 14px;
   font-family: Consolas, "JetBrains Mono", Menlo, "DejaVu Sans Mono", monospace;
-  font-size: 13px;
-  line-height: 1.55;
+  font-size: 15px;
+  line-height: 1.6;
   white-space: pre;
   overflow: auto;
   color: var(--text);
@@ -150,7 +150,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
 }
 .dot {
