@@ -16,9 +16,10 @@ const STAT_MAP = {
 
 /* 公共 CORS 代理，按顺序降级尝试 */
 const CORS_PROXIES = [
-  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
-  url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
+  // 优先使用 corsproxy.io
   url => `https://corsproxy.io/?url=${encodeURIComponent(url)}`,
+  // 备用：Cloudflare CORS Anywhere 实例
+  url => `https://cloudflare-cors-anywhere.queakchannel42.workers.dev/?${url}`,
 ];
 
 /* ================= 名称字典 ================= */
