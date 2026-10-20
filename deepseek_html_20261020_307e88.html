@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>无限融合计算器</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="brand">无限融合计算器</h1>
+      <span class="subtitle">数据来源：FusionDex ︱ Presented by Mcccing_ &amp; Deepseek</span>
+    </div>
+  </header>
+
+  <main class="body">
+    <section class="input-card">
+      <label for="name-a">宝可梦 A</label>
+      <input id="name-a" type="text" value="ambipom" spellcheck="false" autocomplete="off">
+      <label for="name-b">宝可梦 B</label>
+      <input id="name-b" type="text" value="minun" spellcheck="false" autocomplete="off">
+      <button id="btn-compare" type="button">开始比较</button>
+    </section>
+
+    <section class="compare">
+      <article class="card">
+        <div class="card-head"><span id="title-left">A + B</span></div>
+        <pre id="result-left" class="result"></pre>
+      </article>
+      <article class="card">
+        <div class="card-head"><span id="title-right">B + A</span></div>
+        <pre id="result-right" class="result"></pre>
+      </article>
+    </section>
+  </main>
+
+  <footer class="status">
+    <span id="status-dot" class="dot"></span>
+    <span id="status-text">就绪</span>
+    <span class="hint">提示：两侧滚动已同步 · 回车键快速比较</span>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
