@@ -14,12 +14,8 @@ const STAT_MAP = {
   'Speed': 'Speed', 'Total': 'Total'
 };
 
-/* 公共 CORS 代理，按顺序降级尝试 */
 const CORS_PROXIES = [
-  // 优先使用 corsproxy.io
-  url => `https://corsproxy.io/?url=${encodeURIComponent(url)}`,
-  // 备用：Cloudflare CORS Anywhere 实例
-  url => `https://cloudflare-cors-anywhere.queakchannel42.workers.dev/?${url}`,
+  url => `https://fusion-proxy.3268083968.workers.dev/?url=${encodeURIComponent(url)}`,
 ];
 
 /* ================= 名称字典 ================= */
