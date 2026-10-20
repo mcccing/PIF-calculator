@@ -16,6 +16,10 @@ const STAT_MAP = {
 
 const CORS_PROXIES = [
   url => `https://fusion-proxy.3268083968.workers.dev/?url=${encodeURIComponent(url)}`,
+  // 2. corsproxy.io (国内一般可以直连，但可能限流)
+  url => `https://corsproxy.io/?url=${encodeURIComponent(url)}`,
+  // 3. allorigins (国内直连较慢，但备用足够)
+  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`
 ];
 
 /* ================= 名称字典 ================= */
